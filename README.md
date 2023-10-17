@@ -6,8 +6,15 @@ Ubicarse en la carpeta "frontend" y escribir en terminal:
 
 npm install
 
-
 npm install react-bootstrap bootstrap
+
+Para los iconos
+
+npm install --save @fortawesome/fontawesome-svg-core
+
+npm install --save @fortawesome/free-solid-svg-icons
+
+npm install --save @fortawesome/react-fontawesome
 
 Para abrir la pagina ubicarse en la carpeta "frontend" y escribir en terminal:
 
