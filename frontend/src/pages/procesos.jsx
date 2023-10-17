@@ -41,7 +41,7 @@ const ContenidoTabla = (
         <td><a href='/vacantesisw'>Ricardo Antonio Salas Letelier</a></td>
         <td>San Joaquin</td>
         <td>3</td>
-        <td className='filita'><a className='boton' href='/vacantes'>Ver vacantes</a></td>
+        <td className='filita'><a className='boton' href='/vacantesisw'>Ver vacantes</a></td>
     </tr>
     <tr className='segundaColumna'>
       <td className='primeraFila2'><FontAwesomeIcon icon={faCaretRight} /></td>
@@ -62,7 +62,7 @@ const ContenidoTabla = (
         <td><a href='/vacantesbd'>Rodrigo Eduardo Olavarria Alvarez</a></td>
         <td>San Joaquin</td>
         <td>3</td>
-        <td className='filita'><a className='boton' href='/vacantes'>Ver vacantes</a></td>
+        <td className='filita'><a className='boton' href='/vacantesbd'>Ver vacantes</a></td>
     </tr>
     <tr className='segundaColumna'>
       <td className='primeraFila2'> <FontAwesomeIcon icon={faCaretRight} /></td>
