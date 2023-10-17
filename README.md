@@ -1,4 +1,4 @@
-# tarea8
+# Tarea8
 Instrucciones:
 
 
@@ -17,5 +17,6 @@ Abrir http://localhost:5050 en un navegador
 
 Integrantes:
 
-
+Nicolás Toro 201956531-1
+Mauricio Urrutia
 Giuliana Zanetti 201973584-5
