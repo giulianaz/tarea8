@@ -1,0 +1,103 @@
+.contenidoVacantes .filita {
+    text-align: right;
+}
+.contenidoVacantes .primeraColumna td{
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+
+.contenidoVacantes .segundaColumna td{
+    font-size: 0.9rem;
+    border-bottom: 0;
+    padding-top: 20px;
+}
+
+.contenidoVacantes .primeraFila{
+    width: 200px;
+}
+
+.contenidoVacantes .boton{
+    color: rgb(59, 167, 6);
+    border: 1px solid rgb(59, 167, 6);
+    background-color: transparent; /* Sin fondo */
+    padding: 5px 20px; /* Espaciado interno del botón */
+    text-align: center; /* Centro del texto */
+    text-decoration: none; /* Sin subrayado en el texto */
+    display: inline-block; /* Hace que el botón se comporte como un elemento en línea */
+    font-size: 14px; /* Tamaño del texto */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón sobre el botón */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para cambios de color */
+    border-radius: 5px;
+    box-shadow: 0 0 4px #cccccc;
+}
+
+.contenidoVacantes .boton:hover{
+    background-color: rgb(234, 234, 235);
+}
+
+.contenidoVacantes .seleccion p{
+    color: white;
+    background-color: rgb(11, 176, 11);
+    font-size: 0.65rem;
+    width: max-content;
+    border-radius: 10px;
+    padding: 0 5px 1px;
+    font-weight: 600;
+}
+
+.contenidoVacantes ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px 0;
+}
+
+.botonAceptar {
+    color: rgb(255, 255, 255);
+    background-color:#ab47bc;
+    border: 1px solid #ab47bc;
+    padding: 10px 20px; /* Espaciado interno del botón */
+    text-align: center; /* Centro del texto */
+    text-decoration: none; /* Sin subrayado en el texto */
+    display: inline-block; /* Hace que el botón se comporte como un elemento en línea */
+    font-size: 12px; /* Tamaño del texto */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón sobre el botón */
+    border-radius: 3px;
+}
+
+.contenidoVacantes .botonAceptar:hover{
+    background-color: #a036b3;
+    box-shadow: 0 2px 2px 0 rgba(156,39,176,.14), 0 3px 1px -2px rgba(156,39,176,.2), 0 1px 5px 0 rgba(156,39,176,.12);
+}
+
+.botonCerrar {
+    color: rgb(0, 0, 0);
+    background-color:#f5f4f5;
+    border: 1px solid #ece8ed;
+    padding: 10px 20px; /* Espaciado interno del botón */
+    text-align: center; /* Centro del texto */
+    text-decoration: none; /* Sin subrayado en el texto */
+    display: inline-block; /* Hace que el botón se comporte como un elemento en línea */
+    font-size: 12px; /* Tamaño del texto */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón sobre el botón */
+    border-radius: 3px;
+}
+
+.botonCerrar:hover {
+    background-color:#efedef;
+    border: 1px solid #ece8ed;
+}
+
+.botonEquis {
+    background-color: transparent;
+    border: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(169, 169, 169);
+}
+
+.botonEquis:hover{
+    color: black;
+}

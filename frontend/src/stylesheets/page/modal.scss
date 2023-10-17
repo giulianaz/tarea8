@@ -1,0 +1,79 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/modal';
+
+.mi-modal {
+
+    margin-top: 60px;
+
+    .modal-dialog {
+        margin: auto;
+        max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */
+        width: 100%;
+    }
+    
+    .modal-content {
+        background-color: white;
+        border: none; /* Elimina el borde del modal */
+        border-radius: 6px; /* Ajusta el radio de las esquinas según tus preferencias */
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2); /* Sombra ligera para resaltar el modal */
+    }
+
+    .modal-title {
+        font-size: 1rem;
+        font-weight: 100;
+        color: rgb(109, 109, 109);
+    }
+
+    .modal-header{
+        border-bottom: 1px solid rgb(223, 223, 223);
+    }
+
+    .modal-footer{
+        border-top: 1px solid rgb(223, 223, 223);
+    }
+
+    .modal-body{
+        display: grid;
+        grid-template-columns: 0.3fr 1fr;
+        color: rgb(157, 157, 157);
+    }
+
+    .izquierda{
+        display: flex;
+        flex-direction: column;
+        gap: 20px 0;
+    }
+
+    .izquierda p{
+        margin: 0;
+    }
+
+    .derecha{
+        display: flex;
+        flex-direction: column;
+        gap: 20px 0;
+    }
+
+    .derecha p{
+        margin: 0;
+    }
+
+    select{
+        width: 100%;
+        color: rgb(157, 157, 157);
+        border-color: 1px solid rgb(157, 157, 157);
+        font-size: 1rem;
+    }
+
+    textArea{
+        width: 100%;
+        color: rgb(157, 157, 157);
+        border-color: 1px solid rgb(157, 157, 157);
+    }
+
+    option{
+        color: rgb(157, 157, 157);
+    }
+}

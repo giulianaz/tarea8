@@ -1,0 +1,80 @@
+
+.contenidoTabla table td {
+    border-bottom: 0px solid #ccc; /* Agrega un borde inferior de 1 píxel de color gris claro */
+    padding: 5px 0; /* Ajusta el espacio interno de las celdas si es necesario */
+}
+
+.contenidoTabla .segundaColumna{
+    font-size: 0.9rem;
+}
+
+.contenidoTabla .terceraColumna{
+    font-size: 0.8rem;
+}
+.contenidoTabla .cuartaColumna{
+    font-size: 0.8rem;
+    background-color: rgb(247, 247, 247);
+    height: 80px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+.contenidoTabla table{
+    border-collapse: collapse;
+}
+.contenidoTabla table tr{
+    border: none;
+}
+
+.contenidoTabla .cuartaColumna a{
+    color: #8e24aa;
+}
+
+.contenidoTabla table td img{
+    width: 80px;
+    height: auto;
+}
+
+.cuartaColumna td .boton{
+    color: rgb(84, 209, 251);
+    border: 1px solid rgb(42, 194, 244);
+    background-color: transparent; /* Sin fondo */
+    padding: 5px 20px; /* Espaciado interno del botón */
+    text-align: center; /* Centro del texto */
+    text-decoration: none; /* Sin subrayado en el texto */
+    display: inline-block; /* Hace que el botón se comporte como un elemento en línea */
+    font-size: 14px; /* Tamaño del texto */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón sobre el botón */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para cambios de color */
+    border-radius: 5px;
+    box-shadow: 0 0 4px #cccccc;
+}
+
+.cuartaColumna td .boton:hover{
+    background-color: rgb(234, 234, 235);
+}
+
+.contenidoTabla .primeraColumna {
+    border-bottom: 1px solid #000;
+    font-size: 0.9rem;
+}
+
+.contenidoTabla .filita {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.contenidoTabla .primeraFila {
+    padding-left: 10px;
+}
+
+.contenidoTabla .primeraFila2 {
+    padding-left: 40px;
+}
+
+.contenidoTabla .busqueda{
+    text-align: right;
+}
+
+.busqueda a:hover {
+    color: #000;
+}

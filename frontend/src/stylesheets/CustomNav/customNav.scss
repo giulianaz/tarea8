@@ -1,0 +1,42 @@
+/* customNav.css */
+.navbar {
+  background-color: #ffffff;
+  width: 220px;
+  height: 100vh;
+  padding: 10px 20px;
+  box-shadow: 0 0 20px #878686;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: #3c4858;
+  font-weight: 500;
+  border-bottom: 1px solid #e3e5e8;
+  padding-bottom: 23px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+}
+
+.navbar li {
+  padding: 15px 0;
+  cursor: pointer;
+  font-size: 0.9rem;
+  border-radius: 3px;
+}
+
+a {
+  color: #626c78;
+  text-decoration: none;
+}
+
+.navbar li:hover {
+  background-color: #f2f3f4;
+}

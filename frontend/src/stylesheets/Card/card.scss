@@ -1,0 +1,86 @@
+.containerCard{
+    height: max-content;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 4px #cccccc;
+    width: 100%;
+}
+
+.containerGeneral{
+    padding: 0 20px;
+}
+
+.titulo{
+    background: linear-gradient(60deg,#26c6da,#00acc1);
+    color: #fff;
+    padding: 0px 15px;
+    height: 70px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    margin-top: -30px;
+}
+
+.titulo h2 {
+    font-weight: 100;
+    margin: 0;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 60px 0 40px;
+}
+
+.containerSubtitulo {
+    padding: 0 16px;
+    box-shadow: 0 0 4px #cccccc;
+    position: relative;
+}
+
+.subtitulo {
+    background: linear-gradient(60deg,#ab47bc,#8e24aa);
+    padding: 0px 15px;
+    height: 70px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: calc(100% - 60px);
+    top: -30px;
+}
+
+.contenido {
+    position: relative;
+    padding: 60px 0 40px;
+    font-size: 0.9rem;
+}
+
+.contenido p {
+    margin: 0 0 6px;
+}
+
+.subtitulo h3 {
+    color: #fff;
+    font-weight: 100;
+}
+
+table {
+    width: 100%;
+    padding: 10px 0;
+    border-collapse: collapse; /* Para colapsar los bordes de la tabla y evitar espacios entre celdas */
+    margin-bottom: 30px;
+  }
+  
+table tr {
+    height: 40px;
+}
+  
+table td {
+    border-bottom: 1px solid #ccc; /* Agrega un borde inferior de 1 píxel de color gris claro */
+    padding: 5px 0; /* Ajusta el espacio interno de las celdas si es necesario */
+}
+
+.contenido a {
+    color: #8e24aa;
+}

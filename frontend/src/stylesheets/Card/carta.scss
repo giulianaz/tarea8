@@ -1,0 +1,31 @@
+.containerCarta{
+    height: max-content;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 4px #cccccc;
+    width: 100%;
+    position: relative;
+}
+
+.containerCarta .titulo{
+    background: linear-gradient(60deg,#ab47bc,#8e24aa);
+    color: #fff;
+    padding: 0px 15px;
+    height: 70px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    margin-top: -30px;
+}
+
+.containerCarta .titulo h2 {
+    font-weight: 100;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.containerCarta .card {
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 10px 0 40px;
+}
