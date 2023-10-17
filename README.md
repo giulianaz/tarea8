@@ -3,6 +3,7 @@
 Ubicarse en la carpeta "frontend" y escribir en terminal: 
 
 npm install
+
 npm install react-bootstrap bootstrap
 
 Para abrir la pagina ubicarse en la carpeta "frontend" y escribir en terminal:
