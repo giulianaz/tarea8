@@ -1,5 +1,7 @@
 # tarea8
-#Instrucciones:
+Instrucciones:
+
+
 Ubicarse en la carpeta "frontend" y escribir en terminal: 
 
 npm install
@@ -13,5 +15,7 @@ npm run dev
 
 Abrir http://localhost:5050 en un navegador
 
-#Integrantes:
+Integrantes:
+
+
 Giuliana Zanetti 201973584-5
