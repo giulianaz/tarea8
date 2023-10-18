@@ -3,12 +3,8 @@ import CustomNav from '../components/customNav'
 import Carta from '../components/carta'
 import '../stylesheets/procesos.scss'
 import Footer from '../components/footer'
-
-const svgIcon = `
-  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
-    <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM184 232H328c13.3 0 24 10.7 24 24s-10.7 24-24 24H184c-13.3 0-24-10.7-24-24s10.7-24 24-24z" fill="#ff0000" />
-  </svg>
-`;
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
 
 
 const ContenidoTabla = (
@@ -27,7 +23,7 @@ const ContenidoTabla = (
         <td className='filita'><b>Opciones</b></td>
     </tr>
     <tr className='segundaColumna'>
-      <td className='primeraFila2' dangerouslySetInnerHTML={{ __html: svgIcon }}></td>
+      <td className='primeraFila2' ><FontAwesomeIcon icon={faCaretRight} /></td>
         <td>INF-253</td>
         <td>Lenguajes de Programación</td>
     </tr>
