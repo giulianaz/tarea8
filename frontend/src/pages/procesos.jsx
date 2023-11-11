@@ -1,19 +1,46 @@
-import React from 'react'
-import CustomNav from '../components/customNav'
-import Carta from '../components/carta'
-import '../stylesheets/procesos.scss'
-import Footer from '../components/footer'
+import CustomNav from '../components/customNav';
+import React, { useState } from 'react';
+import Carta from '../components/carta';
+import '../stylesheets/procesos.scss';
+import Footer from '../components/footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
+import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import mockupData from '../components/data';
+
+export const Procesos = () => {
+  const [busqueda, setBusqueda] = useState('');
+  const navigate = useNavigate();
+
+  const handleBusquedaChange = (event) => {
+    setBusqueda(event.target.value);
+  };
+
+  const filtrarDatos = () => {
+    return mockupData.filter(item =>
+      item.profesor.toLowerCase().includes(busqueda.toLowerCase())
+    );
+  };
+
+  const handleBuscarClick = () => {
+    const resultados = filtrarDatos();
+    navigate('/procesosesp', { state: { resultados } });
+  };
 
 
-const ContenidoTabla = (
-  <div className='contenidoTabla'>
-    <div className='busqueda'>
-      <input type="text" placeholder="Buscar por profesor" />
-      <a href='/marti'> Buscar</a>
-    </div>
-    <table>
+  const ContenidoTabla = (
+    <div className='contenidoTabla'>
+      <div className='busqueda'>
+        <input
+          type="text"
+          placeholder="Buscar por profesor"
+          value={busqueda}
+          onChange={handleBusquedaChange}
+        />
+        <button onClick={handleBuscarClick}>Buscar</button>
+      </div>
+      <table>
     <tr className='primeraColumna'>
         <td className='primeraFila'></td>
         <td><b>Sigla</b></td>
@@ -86,22 +113,20 @@ const ContenidoTabla = (
         <td className='filita'><a className='boton' href='/vacantes'>Ver vacantes</a></td>
     </tr>
   </table>
-</div>
-);
+    </div>
+  );
 
-
-export const Procesos = () => {
   return (
     <div className='page'>
       <div>
         <CustomNav />
       </div>
       <div className='container'>
-        <Carta titulo="Listado de Asignaturas" contenido={ContenidoTabla}/>
-        <Footer/>
+        <Carta titulo="Listado de Asignaturas" contenido={ContenidoTabla} />
+        <Footer />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Procesos
+export default Procesos;

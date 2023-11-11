@@ -7,6 +7,7 @@ import Marti from '../pages/marti'
 import Vacantes from '../pages/vacantes'
 import VacantesBD from '../pages/vacantesbd'
 import VacantesISW from '../pages/vacantesisw'
+import Procesosesp from '../pages/procesosesp'
 
 
 const AppRouter = () => {
@@ -19,6 +20,7 @@ const AppRouter = () => {
         <Route path='/vacantes' element={<Vacantes/>} />
         <Route path='/vacantesbd' element={<VacantesBD/>} />
         <Route path='/vacantesisw' element={<VacantesISW/>} />
+        <Route path='/procesosesp' element={<Procesosesp/>} />
       </Routes>
     </BrowserRouter>
   )

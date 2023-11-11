@@ -15,8 +15,8 @@ const ContenidoTabla = (
       <tr className='primeraColumna'>
           <td className='primeraFila'>ESTADO</td>
           <td>INFORMACION</td>
-          <td>TAREAS</td>
-          <td>EXTRA</td>
+          <td className='tareas'>TAREAS</td>
+          <td className='extra-salario'>EXTRA</td>
           <td className='filita'>OPCIONES</td>
       </tr>
       <tr className='segundaColumna'>
@@ -26,14 +26,14 @@ const ContenidoTabla = (
             Laboratorio: 0 horas.<br/><br/>
             Total: 15 horas.
         </td>
-        <td>
+        <td className='tareas'>
             <ul>
                 <li>Apoyar durante evaluaciones.</li>
                 <li>Ayudantias de catedra.</li>
                 <li>Creacion de Laboratorios.</li>
             </ul>
         </td>
-        <td>Salario: $80.000 mensual.</td>
+        <td className='extra-salario'>Salario: $80.000 mensual.</td>
         <td className='filita'><button
         type="button"
         className="boton"
