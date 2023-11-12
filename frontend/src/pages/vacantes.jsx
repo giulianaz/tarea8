@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react'
 import CustomNav from '../components/customNav'
 import Carta from '../components/carta'
 import '../stylesheets/vacantes.scss'
@@ -7,9 +7,9 @@ import '../stylesheets/page/modal.scss'
 import { Modal, Button} from 'react-bootstrap';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
-
-
-export const Vacantes = () => {
+const handleAceptarClick = () => {
+  alert("¡Postulación exitosa!");
+};
 
 const ContenidoTabla = (
     <div className='contenidoVacantes'>
@@ -61,7 +61,7 @@ const ContenidoTabla = (
                         <p>Comentario:</p>
                     </div>
                     <div className='derecha'>
-                    <p>Lilly Guevara</p>
+                    <p>Estudiante</p>
                     <select id="cars" name="cars">
                         <option value="" disabled selected>Seleccione Motivación</option>
                         <option>Quiero Aprender</option>
@@ -75,23 +75,26 @@ const ContenidoTabla = (
             </div>
             <div className="modal-footer">
               <button type="button" className="botonCerrar" data-bs-dismiss="modal">CANCELAR</button>
-              <button type="button" className="botonAceptar" data-bs-dismiss="modal">ACEPTAR</button>
-              
+              <button type="button" className="botonAceptar" onClick={handleAceptarClick} data-bs-dismiss="modal">ACEPTAR</button>
             </div>
           </div>
         </div>
       </div>
   </div>
   );
+
+export const Vacantes = () => {
   return (
     <div className='page'>
-      <CustomNav />
+      <div>
+        <CustomNav />
+      </div>
       <div className='container'>
-        <Carta titulo="Vacantes INF-253 - Lenguajes de Programación" contenido={ContenidoTabla} />
-        <Footer />
+        <Carta titulo="Vacantes INF-253 - Lenguajes de Programación" contenido={ContenidoTabla}/>
+        <Footer/>
       </div>
     </div>
-  );
+  )
 }
 
 export default Vacantes

@@ -7,7 +7,9 @@ import '../stylesheets/page/modal.scss'
 import { Modal, Button} from 'react-bootstrap';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
-
+const handleAceptarClick = () => {
+  alert("¡Postulación exitosa!");
+};
 
 const ContenidoTabla = (
     <div className='contenidoVacantes'>
@@ -59,7 +61,7 @@ const ContenidoTabla = (
                         <p>Comentario:</p>
                     </div>
                     <div className='derecha'>
-                    <p>Lilly Guevara</p>
+                    <p>Estudiante</p>
                     <select id="cars" name="cars">
                         <option value="" disabled selected>Seleccione Motivación</option>
                         <option>Quiero Aprender</option>
@@ -73,7 +75,7 @@ const ContenidoTabla = (
             </div>
             <div className="modal-footer">
               <button type="button" className="botonCerrar" data-bs-dismiss="modal">CANCELAR</button>
-              <button type="button" className="botonAceptar" data-bs-dismiss="modal">ACEPTAR</button>
+              <button type="button" className="botonAceptar" onClick={handleAceptarClick} data-bs-dismiss="modal">ACEPTAR</button>
             </div>
           </div>
         </div>
