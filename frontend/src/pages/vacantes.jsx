@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react';
 import CustomNav from '../components/customNav'
 import Carta from '../components/carta'
 import '../stylesheets/vacantes.scss'
@@ -8,6 +8,8 @@ import { Modal, Button} from 'react-bootstrap';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 
+
+export const Vacantes = () => {
 
 const ContenidoTabla = (
     <div className='contenidoVacantes'>
@@ -74,25 +76,22 @@ const ContenidoTabla = (
             <div className="modal-footer">
               <button type="button" className="botonCerrar" data-bs-dismiss="modal">CANCELAR</button>
               <button type="button" className="botonAceptar" data-bs-dismiss="modal">ACEPTAR</button>
+              
             </div>
           </div>
         </div>
       </div>
   </div>
   );
-
-export const Vacantes = () => {
   return (
     <div className='page'>
-      <div>
-        <CustomNav />
-      </div>
+      <CustomNav />
       <div className='container'>
-        <Carta titulo="Vacantes INF-253 - Lenguajes de Programación" contenido={ContenidoTabla}/>
-        <Footer/>
+        <Carta titulo="Vacantes INF-253 - Lenguajes de Programación" contenido={ContenidoTabla} />
+        <Footer />
       </div>
     </div>
-  )
+  );
 }
 
 export default Vacantes
